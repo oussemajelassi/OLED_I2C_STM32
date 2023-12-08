@@ -16,4 +16,14 @@ Stands for read/write command, When this Bit is et to **HIGH**, data in  [0..7] 
 
 #### Adressing Mode : 
 
-Oled have **three** ways of representing printed data and those are : **Page Adressing**, 
+Oled have **three** ways of representing printed data and those are : **Page Adressing**, **Horizontal** and **Verical** Adressing.
+As Far as I have seen many are using the default way which is the Page Adressing.
+
+#### Fonts :
+
+In order to write Charachters we have to make a big buffer having binary representation for each pixel for every charachter.
+There are many ready to use and I think there is an automated way to do so using Python #TODO.
+
+So to Write a charachter we will take its binary representation and iterate over its bits. Every time will will shift it by one bit and look if that bit is **1** or **0**, only then we go lower and write pixel after Pixel.
+Testing an MSB for a 16 bits variable is done using **& 0x8000**. 
+
