@@ -13,3 +13,7 @@ Stands for Data or command Pin, When this Bit is et to **HIGH**, data in  [0..7]
 #### R/W bit :
 
 Stands for read/write command, When this Bit is et to **HIGH**, data in  [0..7] will be treated as data, when it is LOW incoming data will be treated as command.
+
+#### Adressing Mode : 
+
+Oled have **three** ways of representing printed data and those are : **Page Adressing**, 
