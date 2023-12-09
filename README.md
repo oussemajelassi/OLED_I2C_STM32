@@ -35,3 +35,14 @@ There are many ready to use and I think there is an automated way to do so using
 So to Write a charachter we will take its binary representation and iterate over its bits. Every time will will shift it by one bit and look if that bit is **1** or **0**, only then we go lower and write pixel after Pixel.
 Testing an MSB for a 16 bits variable is done using **& 0x8000**. 
 
+#### Pixel Light-UP : 
+
+Each Byte of the static OLED Buffer is representing the status of 8 pixels vertically (**one column in one page**) .
+Each Bit stands for a pixel status.
+We should Locate the **exact Bit** of the wanted Pixel and Force It into HIGH
+Suppose I wanted to light up pixel ( 30 , 50 )
+the **corresponding byte** is located at 30 + ( 50 / 8 ) * Height.  **8** Here Stands for **number of pages**.
+the **corresonding bit** in that Variable is 1 >> (y % 8) . **8** here stands for **number of pixels** in a single Byte.
+
+
+
