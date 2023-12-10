@@ -21,8 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ssd1306_fonts.h"
-#include "ssd1306.h"
+
 #include "OLED_Driver.h"
 /* USER CODE END Includes */
 
@@ -44,7 +43,6 @@
 I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
-extern SSD1306_t SSD1306;
 OLED Screen ;
 /* USER CODE END PV */
 
