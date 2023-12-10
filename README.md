@@ -3,7 +3,9 @@ A repo where I try to implement a driver for the ssd1306 Oled Screen using SPI.
 
 **References** : 
 [SSD1306 Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
+
 [Controllers Tech Tuto](https://controllerstech.com/oled-display-using-i2c-stm32/)
+
 [Micro Peta Tuto](https://www.youtube.com/@NizarMohideen/videos)
 
 ## SSD1306 Must know Concepts : 
