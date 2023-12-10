@@ -22,6 +22,18 @@ Stands for Data or command Pin, When this Bit is et to **HIGH**, data in  [0..7]
 
 Stands for read/write command, When this Bit is et to **HIGH**, data in  [0..7] will be treated as data, when it is LOW incoming data will be treated as command.
 
+### I2C Frames for command and Data : 
+
+After the transmission of the slave address, either the control byte or the data byte may be sent across
+the SDA. A control byte mainly consists of Co and D/C# bits following by six “0” ‘s.
+a. If the Co bit is set as logic “0”, the transmission of the following information will contain
+data bytes only.
+b. The D/C# bit determines the next data byte is acted as a command or a data. If the D/C# bit is
+set to logic “0”, it defines the following data byte as a command. If the D/C# bit is set to
+logic “1”, it defines the following data byte as a data which will be stored at the GDDRAM.
+The GDDRAM column address pointer will be increased by one automatically after each 
+
+
 #### Adressing Mode : 
 
 Oled have **three** ways of representing printed data and those are : **Page Adressing**, **Horizontal** and **Verical** Adressing.
