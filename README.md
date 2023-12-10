@@ -52,5 +52,7 @@ Suppose I wanted to light up pixel ( 30 , 50 )
 the **corresponding byte** is located at 30 + ( 50 / 8 ) * Height.  **8** Here Stands for **number of pages**.
 the **corresonding bit** in that Variable is 1 >> (y % 8) . **8** here stands for **number of pixels** in a single Byte.
 
+## Next : 
 
+I will build up on this by making a white board project on the screen, Most probably on a seperate Repo, Will keep this repo up to date if anything changes.
 
