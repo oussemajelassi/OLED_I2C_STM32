@@ -64,7 +64,11 @@ Suppose I wanted to light up pixel ( 30 , 50 )
 the **corresponding byte** is located at 30 + ( 50 / 8 ) * Height.  **8** Here Stands for **number of pages**.
 the **corresonding bit** in that Variable is 1 >> (y % 8) . **8** here stands for **number of pixels** in a single Byte.
 
-## Next : 
+## Next : OLED White Board using HID MOUSE as a USB Device and my STM32 as a HOST.
 
-I will build up on this by making a white board project on the screen, Most probably on a seperate Repo, Will keep this repo up to date if anything changes.
+I will build up on this by making a white board project on the screen, ~~Most probably on a seperate Repo~~, Will keep this repo up to date if anything changes.
+
+My Application is quite straight forward, combining this OLED simple control with data from my mouse I will draw on My Oled, For now I think there is a problem with Y axis so I will procede with only X axis.
+The problem may be related to my gamer mouse high DPI and I am not sure to be honest.
+Below will be a small description about my architecture which will implement __real time__ techniques.
 
