@@ -70,5 +70,8 @@ I will build up on this by making a white board project on the screen, ~~Most pr
 
 My Application is quite straight forward, combining this OLED simple control with data from my mouse I will draw on My Oled, For now I think there is a problem with Y axis so I will procede with only X axis.
 The problem may be related to my gamer mouse high DPI and I am not sure to be honest.
-Below will be a small description about my architecture which will implement __real time__ techniques.
+Below will be a small description about my application architecture which will implement __real time__ techniques.
+
+![Diagramme sans nom](https://github.com/oussemajelassi/OLED_SimpleControl_STM32/assets/100140668/66c9e9d7-c4de-4ad2-899f-15b1ade9191b)
+
 
